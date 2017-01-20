@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/group[@id='work']/field[@name='parent_project']" position="after">
+        <group id="work" colspan="6" col="10">
+            <label name="milestone_type"/>
+            <field name="milestone_type"/>
+        </group>
+    </xpath>
+</data>
