@@ -18,8 +18,7 @@ class Sale:
     milestone_type = fields.Many2One(
         'project.invoice_milestone.type.group', 'Milestone Group Type',
         states={
-            'readonly': (~Bool(Eval('parent_project')) |
-                ~Eval('state').in_(['draft', 'quotation'])),
+            'readonly':  ~Eval('state').in_(['draft', 'quotation']),
             },
         depends=['parent_project'])
 
