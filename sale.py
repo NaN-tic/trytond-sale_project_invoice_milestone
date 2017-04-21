@@ -1,12 +1,8 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from decimal import Decimal
-
 from trytond.model import fields
-from trytond.pool import Pool, PoolMeta
-from trytond.pyson import Eval, Bool
-from trytond.rpc import RPC
-from trytond.transaction import Transaction
+from trytond.pool import PoolMeta
+from trytond.pyson import Eval
 
 __all__ = ['Sale']
 
@@ -14,7 +10,6 @@ __all__ = ['Sale']
 class Sale:
     __name__ = 'sale.sale'
     __metaclass__ = PoolMeta
-
     milestone_type = fields.Many2One(
         'project.invoice_milestone.type.group', 'Milestone Group Type',
         states={
