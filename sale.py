@@ -15,7 +15,7 @@ class Sale:
         states={
             'readonly':  ~Eval('state').in_(['draft', 'quotation']),
             },
-        depends=['parent_project'])
+        depends=['state'])
 
     def _get_project(self):
         project = super(Sale, self)._get_project()
