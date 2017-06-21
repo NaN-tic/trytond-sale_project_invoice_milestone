@@ -3,7 +3,7 @@
      copyright notices and license terms. -->
 <data>
     <xpath expr="/form/group[@id='work']/field[@name='parent_project']" position="after">
-            <label name="milestone_type"/>
-            <field name="milestone_type"/>
+        <label name="milestone_type"/>
+        <field name="milestone_type"/>
     </xpath>
 </data>
